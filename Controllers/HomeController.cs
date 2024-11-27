@@ -6,9 +6,9 @@ namespace PartyInvitesMVC.Controllers
 {
     public class HomeController : Controller
     {
-        public string Index()
+        public ViewResult Index()
         {
-            return "Hello World";
+            return View("MyView");
         }
 
         // Begin Default code added by Visual Studio
