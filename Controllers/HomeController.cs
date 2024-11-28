@@ -13,9 +13,17 @@ namespace PartyInvitesMVC.Controllers
             return View("MyView");
         }
 
+        [HttpGet]
         public ViewResult RsvpForm()
         {
             return View();
+        }
+
+        [HttpPost]
+        public ViewResult RsvpForm(GuestResponse guestResponse)
+        {
+            Repository.AddResponse(guestResponse);
+            return View("Thanks", guestResponse);
         }
 
         // Begin Default code added by Visual Studio
