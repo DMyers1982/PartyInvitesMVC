@@ -13,6 +13,11 @@ namespace PartyInvitesMVC.Controllers
             return View("MyView");
         }
 
+        public ViewResult RsvpForm()
+        {
+            return View();
+        }
+
         // Begin Default code added by Visual Studio
         //private readonly ILogger<HomeController> _logger;
 
