@@ -26,6 +26,11 @@ namespace PartyInvitesMVC.Controllers
             return View("Thanks", guestResponse);
         }
 
+        public ViewResult ListResponses()
+        {
+            return View(Repository.Responses.Where(r => r.WillAttend == true));
+        }
+
         // Begin Default code added by Visual Studio
         //private readonly ILogger<HomeController> _logger;
 
