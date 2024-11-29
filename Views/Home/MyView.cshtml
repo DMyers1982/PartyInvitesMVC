@@ -7,30 +7,13 @@
     <head>
         <meta name="viewport" content="width=device-width" />
         <title>Index</title>
+        <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
     </head>
     <body>
-        <form asp-action="RsvpForm" method="post">
-                <div asp-validation-summary="All"></div>
-                <p>
-                    <label asp-for="Name">Your name:</label>
-                    <input asp-for="Name" />
-                </p>
-                <p>
-                    <label asp-for="Email">Your email:</label>
-                    <input asp-for="Email" />
-                </p>
-                <p>
-                    <label asp-for="Phone">Your phone:</label>
-                    <input asp-for="Phone" /></p>
-                <p>
-                    <label>Will you attend?</label>
-                    <select asp-for="WillAttend">
-                        <option value="">Choose an option</option>
-                        <option value="true">Yes, I'll be there</option>
-                        <option value="false">No, I can't come</option>
-                    </select>
-                </p>
-                <button type="submit">Submit RSVP</button>
-        </form>
+        <div class="text-center">
+            <h3>We're going to have an exciting party!</h3>
+            <h4>And you are invited</h4>
+            <a class="btn btn-primary" asp-action="RsvpForm">RSVP Now</a>
+        </div>
     </body>
 </html>
