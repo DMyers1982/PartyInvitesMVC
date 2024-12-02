@@ -1,2 +1,2 @@
 # PartyInvitesMVC
-Created with VS2022 on WIN764 machine
+Created with VS2022 on WIN7ULTIMATE-64 machine
